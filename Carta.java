@@ -1,7 +1,7 @@
 import java.text.Normalizer;
 import java.util.function.UnaryOperator;
 
-/** Catálogo de cartas */
+/** Catálogo de cartas  /
 public enum Carta {
     ELFO("ELFO", TipoCarta.RACA, Elfo::new),
     ANAO("ANÃO", TipoCarta.RACA, Anao::new),
