@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
+/** Decorator que acrescenta uma raça ao personagem. */
 public abstract class RacaDecorator extends PersonagemDecorator {
     private final String nome;
 

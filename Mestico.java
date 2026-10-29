@@ -1,3 +1,4 @@
+/** Carta especial: eleva o limite para 2 raças (idempotente). */
 public class Mestico extends PersonagemDecorator {
     public Mestico(Personagem personagem) { super(personagem); }
 

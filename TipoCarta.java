@@ -1,1 +1,1 @@
-public enum TipoCarta { RACA, CLASSE, ESPECIAL}
+public enum TipoCarta { RACA, CLASSE, ESPECIAL }

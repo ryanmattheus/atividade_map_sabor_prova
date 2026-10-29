@@ -1,5 +1,6 @@
 import java.util.List;
 
+/** Decorator base: delega tudo ao personagem embrulhado. */
 public abstract class PersonagemDecorator implements Personagem {
     protected final Personagem personagem;
 
