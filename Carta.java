@@ -1,7 +1,7 @@
 import java.text.Normalizer;
 import java.util.function.UnaryOperator;
 
-/** Catálogo de cartas. Para criar uma carta nova: uma classe decorator + uma linha aqui. */
+/** Catálogo de cartas */
 public enum Carta {
     ELFO("ELFO", TipoCarta.RACA, Elfo::new),
     ANAO("ANÃO", TipoCarta.RACA, Anao::new),
@@ -36,10 +36,10 @@ public enum Carta {
         };
     }
 
-    /** Embrulha o personagem com o decorator correspondente. */
+    /** Embrulho do personagem com o seu decorator  */
     public Personagem aplicar(Personagem p) { return efeito.apply(p); }
 
-    /** Aceita "anão", "ANAO", "super munchkin", etc. */
+    /** Aceita diversas formas de escrever o nome da carta: "anão" */
     public static Carta de(String texto) {
         String t = Normalizer.normalize(texto.trim(), Normalizer.Form.NFD)
                 .replaceAll("\\p{M}", "").toUpperCase().replace(' ', '_');

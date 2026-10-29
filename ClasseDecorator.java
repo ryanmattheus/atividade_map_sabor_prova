@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/** Decorator que acrescenta uma classe ao personagem. */
+/** acrescenta uma classe ao personagem. */
 public abstract class ClasseDecorator extends PersonagemDecorator {
     private final String nome;
 
